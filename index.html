@@ -1,0 +1,307 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kunal Sahu | Developer Portfolio</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #080d18;
+  color: white;
+  line-height: 1.7;
+}
+
+header {
+  padding: 20px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111827;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  color: #65e6c4;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #65e6c4;
+}
+
+.hero {
+  min-height: 570px;
+  padding: 110px 10%;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(120deg,#0b1220,#123c49);
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero small {
+  color: #65e6c4;
+  letter-spacing: 3px;
+}
+
+.hero h1 {
+  font-size: clamp(42px,8vw,70px);
+  line-height: 1.2;
+  margin: 15px 0;
+}
+
+.hero h2 {
+  color: #65e6c4;
+  font-size: 25px;
+}
+
+.hero p {
+  color: #b6c4d7;
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: #65e6c4;
+  color: #08131b;
+  padding: 12px 25px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+.section-title {
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+
+.section-title span {
+  color: #65e6c4;
+}
+
+.about-text {
+  max-width: 750px;
+  color: #b6c4d7;
+  font-size: 17px;
+}
+
+.skills, .projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(210px,1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #151f30;
+  border: 1px solid #27364a;
+  padding: 25px;
+  border-radius: 12px;
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-7px);
+  border-color: #65e6c4;
+}
+
+.card h3 {
+  color: #65e6c4;
+  margin-bottom: 12px;
+}
+
+.card p {
+  color: #b6c4d7;
+}
+
+.contact {
+  background: #111b2b;
+  text-align: center;
+}
+
+.contact p {
+  color: #b6c4d7;
+  margin: 10px;
+}
+
+footer {
+  padding: 25px;
+  text-align: center;
+  color: #8b9bb1;
+  background: #080d18;
+}
+
+@media(max-width:600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 7px;
+    font-size: 12px;
+  }
+
+  .hero {
+    padding: 90px 7%;
+  }
+
+  section {
+    padding: 60px 7%;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">KUNAL.</div>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<div class="hero" id="home">
+  <div class="hero-content">
+    <small>HELLO, WELCOME TO MY PORTFOLIO</small>
+    <h1>I'm Kunal Sahu</h1>
+    <h2>IT Student & Aspiring Developer</h2>
+    <p>
+      I am passionate about technology, programming,
+      Android app development and game development.
+      I love learning new things and building creative projects.
+    </p>
+    <a href="#projects" class="btn">Explore My Work →</a>
+  </div>
+</div>
+
+<section id="about">
+  <h2 class="section-title">About <span>Me</span></h2>
+  <p class="about-text">
+    I am a B.Tech Information Technology student at
+    Engineering College Ajmer. I enjoy solving problems,
+    learning programming languages and developing useful
+    applications. My goal is to become a skilled software,
+    app and game developer.
+  </p>
+</section>
+
+<section id="skills">
+  <h2 class="section-title">My <span>Skills</span></h2>
+  <div class="skills">
+    <div class="card">
+      <h3>Programming</h3>
+      <p>Java, C, C++</p>
+    </div>
+    <div class="card">
+      <h3>Web Development</h3>
+      <p>HTML, CSS, JavaScript</p>
+    </div>
+    <div class="card">
+      <h3>App Development</h3>
+      <p>Android Studio, Java</p>
+    </div>
+    <div class="card">
+      <h3>Other Skills</h3>
+      <p>Problem Solving, Teamwork, Creativity</p>
+    </div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2 class="section-title">My <span>Projects</span></h2>
+  <div class="projects">
+    <div class="card">
+      <h3>Online Shopping App</h3>
+      <p>
+        An Android application project focused on
+        product browsing and shopping screens.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Personal Portfolio</h3>
+      <p>
+        My personal website created using
+        HTML, CSS and JavaScript.
+      </p>
+    </div>
+    <div class="card">
+      <h3>Future Game Project</h3>
+      <p>
+        Exploring game development and
+        interactive digital experiences.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+  <h2 class="section-title">
+    Let's <span>Connect</span>
+  </h2>
+
+  <p>Let's connect and build something amazing!</p>
+
+  <p>
+    <a href="mailto:kunal.sahu93510@gmail.com">
+      📧 kunal.sahu93510@gmail.com
+    </a>
+  </p>
+
+  <p>
+    <a href="https://github.com/KunalSahu2005">
+      💻 GitHub Profile
+    </a>
+  </p>
+
+  <p>
+    <a href="https://www.linkedin.com/in/kunal-sahu-95302a34a/">
+      🔗 LinkedIn Profile
+    </a>
+  </p>
+
+  <a class="btn"
+     href="mailto:kunal.sahu93510@gmail.com">
+    Contact Me →
+  </a>
+</section>
+  
+
+<footer>
+  © 2026 Kunal Sahu | All Rights Reserved
+</footer>
+
+</body>
+</html>
